@@ -1,18 +1,8 @@
-// define the time limit
 let TIME_LIMIT = 10;
 
-// define quotes to be used
-let quotes_array = [
-  "Push yourself, because no one else is going to do it for you.",
-  "Failure is the condiment that gives success its flavor.",
-  "Wake up with determination. Go to bed with satisfaction.",
-  "It's going to be hard, but hard does not mean impossible.",
-  "Learning never exhausts the mind.",
-  "The only way to do great work is to love what you do."
-];
 
 let wordList = readTextFile();
-console.log(wordList);
+// console.log(wordList);
 
 let timer_text = document.querySelector(".curr_time");
 let error_text = document.querySelector(".curr_errors");
@@ -176,9 +166,7 @@ function resetValues() {
   wpm_group.style.display = "none";
 }
 
-fuction readTextFile() {
+function readTextFile() {
 
-fetch('list.txt')
-   .then( r => r.text() )
-   .then( t => console.log(t) )
+
 }
