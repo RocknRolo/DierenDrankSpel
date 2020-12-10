@@ -1,0 +1,86 @@
+body {
+  background-color: #F4EB34;
+  color: black;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heading {
+  margin-bottom: 10px;
+  font-size: 4rem;
+  color: black;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.timer, .errors, .cpm, .wpm {
+  background-color: #fff;
+  height: 60px;
+  width: 70px;
+  margin: 8px;
+  padding: 10px;
+  border-radius: 10%;
+  box-shadow: yellow 0px 0px 10px 5px;
+}
+
+.cpm, .wpm  {
+  display: none;
+}
+
+.header_text {
+  font-size: 0.8rem;
+  font-weight: 1000;
+}
+
+.curr_time, .curr_errors, .curr_cpm, .curr_wpm {
+  font-size: 3rem;
+}
+
+.quote {
+  background-color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 10px;
+  padding: 25px;
+  box-shadow: yellow 0px 0px 10px 5px;
+}
+
+.input_area {
+  background-color: #fff;
+  height: 80px;
+  width: 40%;
+  font-family: roboto;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 15px;
+  padding: 20px;
+  border: 0px;
+  box-shadow: yellow 0px 0px 10px 5px;
+}
+
+.incorrect_char {
+  color: red;
+  text-decoration: underline;
+}
+
+.correct_char {
+  color: darkgreen;
+}
+
+.restart_btn {
+  display: none;
+  background-color: #fff;
+  font-size: 1.5rem;
+  padding: 10px;
+  border: 0px;
+  box-shadow: yellow 0px 0px 10px 5px;
+}
