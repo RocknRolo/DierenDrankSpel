@@ -1,26 +1,26 @@
 <html lang="en">
 <head>
-  <title>Simple Speed Typer</title>
-  <link rel="stylesheet" href="style.css">
+    <title>DierenSpel</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="logo">DierenSpel</div>
-    <div class="box">
-        <div class="letter">
-          <div class="header_text">Letter</div>
-          <div class="info_text">X</div>
+    <div class="container">
+        <div class="logo">DierenSpel</div>
+        <div class="box">
+            <div class="letter_box">
+                <div class="letter_header">Letter</div>
+                <div class="letter_text">X</div>
+            </div>
+            <div class="timer_box">
+                <div class="timer_header">Tijd</div>
+                <div class="timer_text">10s</div>
+            </div>
+        </div>
+        <div class="word">Hier staat het huidige woord.</div>
+        <div class="drink_banner">Drink!</div>
+        <textarea class="input_area" placeholder="schrijf hier..." 
+        oninput="processCurrentText()" onfocus="startGame()"></textarea>
     </div>
-    <div class="time">
-        <div class="header_text">Tijd</div>
-        <div class="info_text">10s</div>
-    </div>
-</div>
-
-<div class="word">Hier staat het huidige woord.</div>
-    <textarea class="input_area" placeholder="schrijf hier..." 
-    oninput="processCurrentText()" onfocus="startGame()"></textarea>
-</div>
 <script src="game.js"></script>
 </body>
 </html>
