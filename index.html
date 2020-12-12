@@ -5,31 +5,22 @@
 </head>
 <body>
   <div class="container">
-    <div class="heading">DierenDrinkSpel</div>
-    <div class="header">
-      <div class="wpm">
-        <div class="header_text">WPM</div>
-        <div class="curr_wpm">100</div>
-      </div>
-      <div class="cpm">
-        <div class="header_text">CPM</div>
-        <div class="curr_cpm">100</div>
-      </div>
-      <div class="letter">
-        <div class="header_text">Letter</div>
-        <div class="curr_errors">0</div>
-      </div>
-      <div class="timer">
-        <div class="header_text">Time</div>
-        <div class="time">10s</div>
-      </div>
+    <div class="logo">DierenSpel</div>
+    <div class="box">
+        <div class="letter">
+          <div class="header_text">Letter</div>
+          <div class="info_text">X</div>
     </div>
+    <div class="time">
+        <div class="header_text">Tijd</div>
+        <div class="info_text">10s</div>
+    </div>
+</div>
 
-    <div class="quote">Click on the area below to start the game.</div>
-    <textarea class="input_area" placeholder="start typing here..." oninput="processCurrentText()"
-      onfocus="startGame()"></textarea>
-    <button class="restart_btn" onclick="resetValues()">Restart</button>
-  </div>
-  <script src="game.js"></script>
+<div class="word">Hier staat het huidige woord.</div>
+    <textarea class="input_area" placeholder="schrijf hier..." 
+    oninput="processCurrentText()" onfocus="startGame()"></textarea>
+</div>
+<script src="game.js"></script>
 </body>
 </html>

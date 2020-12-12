@@ -10,18 +10,16 @@ body {
   align-items: center;
 }
 
-.heading {
-  margin-bottom: 10px;
-  font-size: 4rem;
-  color: black;
+.logo {
+	font: bold 50px "Comic Sans MS";
 }
 
-.header {
+.box {
   display: flex;
   align-items: center;
 }
 
-.timer, .errors, .cpm, .wpm {
+.time, .letter {
   background-color: #fff;
   height: 60px;
   width: 70px;
@@ -31,56 +29,32 @@ body {
   box-shadow: yellow 0px 0px 10px 5px;
 }
 
-.cpm, .wpm  {
-  display: none;
-}
-
 .header_text {
   font-size: 0.8rem;
   font-weight: 1000;
 }
 
-.curr_time, .curr_errors, .curr_cpm, .curr_wpm {
+.info_text {
   font-size: 3rem;
 }
 
-.quote {
+.word {
   background-color: #fff;
+  font-family: roboto;
   font-size: 1.5rem;
   text-align: center;
   margin: 10px;
-  padding: 25px;
+  padding: 20px;
   box-shadow: yellow 0px 0px 10px 5px;
 }
 
 .input_area {
   background-color: #fff;
-  height: 80px;
-  width: 40%;
   font-family: roboto;
   font-size: 1.5rem;
-  font-weight: 600;
   text-align: center;
-  margin: 15px;
+  margin: 10px;
   padding: 20px;
-  border: 0px;
-  box-shadow: yellow 0px 0px 10px 5px;
-}
-
-.incorrect_char {
-  color: red;
-  text-decoration: underline;
-}
-
-.correct_char {
-  color: darkgreen;
-}
-
-.restart_btn {
-  display: none;
-  background-color: #fff;
-  font-size: 1.5rem;
-  padding: 10px;
   border: 0px;
   box-shadow: yellow 0px 0px 10px 5px;
 }
