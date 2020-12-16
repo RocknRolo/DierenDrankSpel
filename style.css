@@ -36,24 +36,30 @@ body {
 }
 
 .drink_banner {
-  display: none;
+  background-color: #F4EB34;
+  font-size: 7rem;
+  position: fixed; 
+  width: 100%; 
+  height: 100%; 
+  z-index: 2; 
+  display: none; 
 }
 
-
-.word {
+.word_box {
+  font-size: 3rem;
   background-color: #fff;
   font-family: roboto;
-  font-size: 1.5rem;
   text-align: center;
   margin: 10px;
-  padding: 20px;
+  padding: 30px;
   box-shadow: yellow 0px 0px 10px 5px;
 }
 
 .input_area {
+  height: 75px;
+  font-size: 2.5rem;
   background-color: #fff;
   font-family: roboto;
-  font-size: 1.5rem;
   text-align: center;
   margin: 10px;
   padding: 20px;
