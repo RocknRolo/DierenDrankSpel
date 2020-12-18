@@ -2,6 +2,7 @@ body {
   background-color: #F4EB34;
   color: black;
   text-align: center;
+overflow: hidden;
 }
 
 .container {
