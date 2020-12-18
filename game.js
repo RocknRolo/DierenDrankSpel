@@ -66,4 +66,6 @@ TODO:
 list.txt inlezen als stringarray
 (bug) timer pauseert na weergeven banner
 spelregels implementeren
+
+dingen
 */
