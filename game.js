@@ -28,11 +28,6 @@ function readText() {
     }
 }
 
-function capitalizeFirstLetter(string) {
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
-
 function runTimer() {
     if (timeLeft > 0) {
         timeLeft--;
