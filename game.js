@@ -9,7 +9,7 @@ let wordList = ["hond", "vis", "slang", "giraffe", "egel", "slak",
 
 let namedWords = [];
 
-let letter = document.querySelector(".letter_text");
+let letter_text = document.querySelector(".letter_text");
 let timer_text = document.querySelector(".timer_text");
 let word_text = document.querySelector(".word_text");
 let input_area = document.querySelector(".input_area");
@@ -30,6 +30,7 @@ function readText() {
         current_word = input_area.value;
         namedWords.push(current_word);
         word_text.textContent = current_word;
+        letter_text.textContent = current_word.slice(-1).toUpperCase();
         input_area.value = "";
         resetTimer();
     }
@@ -66,6 +67,7 @@ TODO:
 list.txt inlezen als stringarray
 (bug) timer pauseert na weergeven banner
 spelregels implementeren
+text in word_box altijd met hoofdletter weergeven
 
 dingen
 */
