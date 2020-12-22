@@ -1,12 +1,5 @@
 let TIME_LIMIT = 10;
 
-// deze stringarray is voor testdoeleinden totdat ik snap hoe ik 'n
-// textbestand (csv xml json xml whatever) kan uitlezen.
-let wordList = ["hond", "vis", "slang", "giraffe", "egel", "slak", 
-"krekel", "lijster", "reiger", "rendier", "regenworm", "paard", "kat", 
-"tijger", "reebok", "krokodil", "leeuw", "walvis", "schildpad", "dodo", 
-"olifant", "teek", "armadillo"];
-
 let namedWords = [];
 
 let letter_text = document.querySelector(".letter_text");
@@ -26,8 +19,8 @@ function startGame() {
 
 function readText() {
 
-    if (wordList.includes(input_area.value)) {
-        current_word = input_area.value;
+    if (wordList.includes(input_area.value.toLowerCase())) {
+        current_word = capitalizeFirstLetter(input_area.value.toLowerCase());
         namedWords.push(current_word);
         word_text.textContent = current_word;
         letter_text.textContent = current_word.slice(-1).toUpperCase();
