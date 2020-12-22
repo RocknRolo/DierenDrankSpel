@@ -19,14 +19,19 @@ function startGame() {
 
 function readText() {
 
-    if (wordList.includes(input_area.value)) {
-        current_word = input_area.value;
+    if (wordList.includes(input_area.value.toLowerCase())) {
+        current_word = capitalizeFirstLetter(input_area.value.toLowerCase());
         namedWords.push(current_word);
         word_text.textContent = current_word;
         input_area.value = "";
         resetTimer();
     }
 }
+
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 
 function runTimer() {
     if (timeLeft > 0) {
