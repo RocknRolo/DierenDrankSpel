@@ -54,13 +54,3 @@ function drink() {
     }, 2000);
 
 }
-
-/*
-TODO:
-list.txt inlezen als stringarray
-(bug) timer pauseert na weergeven banner
-spelregels implementeren
-text in word_box altijd met hoofdletter weergeven
-
-dingen
-*/
