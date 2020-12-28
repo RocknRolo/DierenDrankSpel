@@ -10,6 +10,8 @@ let drink_banner = document.querySelector(".drink_banner");
 
 let timeLeft = TIME_LIMIT;
 let timer = null;
+let firstWord = true;
+let current_word = "";
 
 function startGame() {
     if (timer == null) {
@@ -19,7 +21,10 @@ function startGame() {
 
 function readText() {
 
-    if (wordList.includes(input_area.value.toLowerCase())) {
+    if (wordList.includes(input_area.value.toLowerCase()) &&
+        (input_area.value.charAt(0).toLowerCase() == current_word.slice(-1) || firstWord)) {
+        
+        firstWord = false;
         current_word = capitalizeFirstLetter(input_area.value.toLowerCase());
         namedWords.push(current_word);
         word_text.textContent = current_word;

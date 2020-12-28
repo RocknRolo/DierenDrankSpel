@@ -629,5 +629,7 @@ let wordList = [
 "luis",
 "antilope",
 "kolibrie",
-"otter"
+"otter",
+"bok",
+"vogel"
 ];
