@@ -631,5 +631,7 @@ let wordList = [
 "kolibrie",
 "otter",
 "bok",
-"vogel"
+"vogel",
+"tekkel",
+"stier"
 ];
