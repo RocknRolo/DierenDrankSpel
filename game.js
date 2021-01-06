@@ -1,4 +1,4 @@
-let TIME_LIMIT = 10;
+let TIME_LIMIT = 5;
 
 let namedWords = [];
 
@@ -7,6 +7,7 @@ let timer_text = document.querySelector(".timer_text");
 let word_text = document.querySelector(".word_text");
 let input_area = document.querySelector(".input_area");
 let drink_banner = document.querySelector(".drink_banner");
+let drink_text = document.querySelector(".drink_text");
 
 let timeLeft = TIME_LIMIT;
 let timer = null;
@@ -20,16 +21,22 @@ function startGame() {
 }
 
 function readText() {
-
     if (wordList.includes(input_area.value.toLowerCase()) &&
-        (input_area.value.charAt(0).toLowerCase() == current_word.slice(-1) || firstWord)) {
-        
+        (input_area.value.charAt(0).toLowerCase() == 
+        	current_word.slice(-1) || firstWord)) {
+		if (namedWords.includes(capitalizeFirstLetter(input_area.value.toLowerCase()))) {
+			drink_text.textContent = "Dat woord is al genoemd";
+		    drink();
+		}
         firstWord = false;
+        
         current_word = capitalizeFirstLetter(input_area.value.toLowerCase());
         namedWords.push(current_word);
+        
         word_text.textContent = current_word;
         letter_text.textContent = current_word.slice(-1).toUpperCase();
         input_area.value = "";
+        
         resetTimer();
     }
 }
@@ -40,6 +47,11 @@ function runTimer() {
         timer_text.textContent = timeLeft + "s";
     }
     else {
+		drink_text.textContent = "Je was te laat";
+    	if (current_word.slice(0,1).toLowerCase == current_word.slice(-1).toLowerCase) {
+    		// ^^^ waarom is dit altijd true? ^^^
+    		drink_text.textContent = "3x drinken!";
+    	}
         drink();
     }
 }
@@ -56,6 +68,6 @@ function drink() {
     setTimeout(() => {  
         drink_banner.style.display = "none";
         resetTimer();
-    }, 2000);
+    }, 3000);
 
 }

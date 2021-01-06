@@ -633,5 +633,6 @@ let wordList = [
 "bok",
 "vogel",
 "tekkel",
-"stier"
+"stier",
+"marter"
 ];
