@@ -1,4 +1,4 @@
-let TIME_LIMIT = 5;
+let TIME_LIMIT = 10;
 
 let namedWords = [];
 
@@ -48,8 +48,9 @@ function runTimer() {
     }
     else {
 		drink_text.textContent = "Je was te laat";
-    	if (current_word.slice(0,1).toLowerCase == current_word.slice(-1).toLowerCase) {
-    		// ^^^ waarom is dit altijd true? ^^^
+    	if (current_word.slice(0,1).toLowerCase() == 
+    		current_word.slice(-1).toLowerCase() &&
+    		current_word.length > 0) {
     		drink_text.textContent = "3x drinken!";
     	}
         drink();
