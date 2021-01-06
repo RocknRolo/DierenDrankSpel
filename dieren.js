@@ -634,5 +634,9 @@ let wordList = [
 "vogel",
 "tekkel",
 "stier",
-"marter"
+"marter",
+"lieveheersbeestje",
+"nachtegaal",
+"neusaap",
+"parkiet"
 ];
