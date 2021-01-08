@@ -148,7 +148,6 @@ let wordList = [
 "fangtooth",
 "fazant",
 "fennek",
-"flamingos",
 "franjehaai",
 "fret",
 "fretkat",
@@ -638,5 +637,6 @@ let wordList = [
 "lieveheersbeestje",
 "nachtegaal",
 "neusaap",
-"parkiet"
+"parkiet",
+"flamingo"
 ];
