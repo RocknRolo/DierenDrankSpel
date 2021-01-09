@@ -218,7 +218,6 @@ let wordList = [
 "ijseend",
 "ijsvis",
 "ijsvogel",
-"ijsvogels",
 "impala",
 "indri",
 "indris",
@@ -638,5 +637,6 @@ let wordList = [
 "nachtegaal",
 "neusaap",
 "parkiet",
-"flamingo"
+"flamingo",
+"salamander"
 ];
