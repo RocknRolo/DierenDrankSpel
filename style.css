@@ -41,7 +41,7 @@ body {
 
 .drink_banner {
     background-color: #F4EB34;
-    margin-top: 70px;
+    margin-top: 65px;
     font: bold 7rem "Comic Sans MS";
     position: fixed; 
     width: 100%; 
@@ -70,11 +70,10 @@ body {
 }
 
 .input_area {
+    background-color: #fff;
     width: 360px;
     height: 75px;
-    font-size: 2.5rem;
-    background-color: #fff;
-    font-family: roboto;
+    font: 2.5rem roboto;
     text-align: center;
 
     margin: 10px;
@@ -82,4 +81,9 @@ body {
     padding: 1.2% 0 0 0;
     resize: none;
     box-shadow: yellow 0px 0px 10px 5px;
+}
+
+::placeholder {
+  color: #eee;
+  opacity: 1;
 }
