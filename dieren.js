@@ -652,6 +652,5 @@ let wordList = [
 "woestijnrat",
 "eikenprocessierups",
 "os",
-"naaktslak",
-"tilapia"
+"naaktslak"
 ];

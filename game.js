@@ -1,7 +1,5 @@
 const TIME_LIMIT = 10;
 
-let namedWords = [];
-
 let letter_text = document.querySelector(".letter_text");
 let timer_text = document.querySelector(".timer_text");
 let word_text = document.querySelector(".word_text");
@@ -13,6 +11,7 @@ let timeLeft = TIME_LIMIT;
 let timer = null;
 let firstWord = true;
 let currentWord = "";
+let namedWords = [];
 
 function startGame() {
     if (timer == null) {
@@ -37,15 +36,13 @@ function runTimer() {
 }
 
 function readText() {
-
     if (wordList.includes(input_area.value.toLowerCase()) &&
-        (input_area.value.charAt(0).toLowerCase() == 
-        	currentWord.slice(-1) || firstWord)) {
+        (input_area.value.charAt(0).toLowerCase() == currentWord.slice(-1) || firstWord)) {
+        firstWord = false;
 		if (namedWords.includes(capitalizeFirstLetter(input_area.value.toLowerCase()))) {
 			drink_text.textContent = "Dat woord is al genoemd";
 		    drink();
 		}
-        firstWord = false;
         
         currentWord = capitalizeFirstLetter(input_area.value.toLowerCase());
         namedWords.push(currentWord);
@@ -76,5 +73,8 @@ function drink() {
         drink_banner.style.display = "none";
         resetTimer();
     }, 3000);
+}
 
+function capitalizeFirstLetter(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
 }
