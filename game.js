@@ -1,11 +1,11 @@
 const TIME_LIMIT = 10;
 
-let letter_text = document.querySelector(".letter_text");
-let timer_text = document.querySelector(".timer_text");
-let word_text = document.querySelector(".word_text");
-let input_area = document.querySelector(".input_area");
-let drink_banner = document.querySelector(".drink_banner");
-let drink_text = document.querySelector(".drink_text");
+let letter_text = document.querySelector("#letter_text");
+let timer_text = document.querySelector("#timer_text");
+let word_text = document.querySelector("#word_text");
+let input_area = document.querySelector("#input_area");
+let drink_banner = document.querySelector("#drink_banner");
+let drink_text = document.querySelector("#drink_text");
 
 let timeLeft = TIME_LIMIT;
 let timer = null;
@@ -15,14 +15,14 @@ let namedWords = [];
 
 function startGame() {
     if (timer == null) {
-        timer = setInterval(runTimer, 1000);
+        resetTimer();
     }
 }
 
 function runTimer() {
     if (timeLeft > 0) {
-        timeLeft--;
         timer_text.textContent = timeLeft + "s";
+        timeLeft--;
     }
     else {
         drink_text.textContent = "Je was te laat";
@@ -43,18 +43,19 @@ function readText() {
 			drink_text.textContent = "Dat woord is al genoemd";
 		    drink();
 		}
-        
+
         currentWord = capitalizeFirstLetter(input_area.value.toLowerCase());
         namedWords.push(currentWord);
-        
+
         word_text.textContent = currentWord;
         letter_text.textContent = currentWord.slice(-1).toUpperCase();
+
         input_area.value = "";
-        
+
         resetTimer();
     }
     if (currentWord.length > 15) {
-        word_text.style.fontSize = "2.5rem";
+        word_text.style.fontSize = "2.2rem";
     } else {
         word_text.style.fontSize = "3rem";
     }
@@ -63,15 +64,16 @@ function readText() {
 function resetTimer() {
     clearInterval(timer);
     timeLeft = TIME_LIMIT;
-    timer_text.textContent = timeLeft + 's';
     timer = setInterval(runTimer, 1000);
 }
 
 function drink() {
-    drink_banner.style.display = "block"; 
+    clearInterval(timer);
+    drink_banner.style.display = "block";
     setTimeout(() => {  
         drink_banner.style.display = "none";
         resetTimer();
+        timer_text.textContent = timeLeft + "s";
     }, 3000);
 }
 

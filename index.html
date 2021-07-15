@@ -1,34 +1,34 @@
-<html>
+<html lang="en">
 <head>
-    <title>DierenDrankSpel</title>
+    <meta charset="UTF-8">
+    <title>Dieren Drankspel</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <div class="logo">DierenDrankSpel</div>
+        <div id="logo">Dieren Drankspel</div>
         <div class="box">
-            <div class="letter_box">
-                <div class="letter_header">Letter</div>
-                <div class="letter_text"> </div>
+            <div id="letter_box">
+                <div id="letter_header">Letter</div>
+                <div id="letter_text"> </div>
             </div>
-            <div class="timer_box">
-                <div class="timer_header">Tijd</div>
-                <div class="timer_text">10s</div>
+            <div id="timer_box">
+                <div id="timer_header">Tijd</div>
+                <div id="timer_text">10s</div>
             </div>
         </div>
-        <div class="word_box">
-            <div class="word_text"></div>
+        <div id="word_box">
+            <div id="word_text"></div>
         </div>
-        <div class="drink_banner">Drink!<div class="drink_text"></div>
+        <div id="drink_banner">Drink!<div id="drink_text"></div>
         </div>
-        <textarea class="input_area" placeholder="schrijf hier..."
-        onfocus="startGame()" oninput="readText()"></textarea>
+        <textarea id="input_area" placeholder="schrijf hier..." onfocus="startGame()" oninput="readText()"></textarea>
+        <button id="rules_button" onclick="window.location.href='regel.html'">Spelregels</button>
     </div>
 <script src="game.js"></script>
 <script src="dieren.js"></script>
-<script src="util.js"></script>
 
 </body>
 </html>
