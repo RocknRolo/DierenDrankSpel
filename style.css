@@ -24,7 +24,7 @@ body {
 
 #logo {
     width: 100%;
-    font-family: "Comic Sans MS", sans-serif;
+    font-family: "Comic Neue", sans-serif;
     color: #fff;
     font-size: 3rem;
     text-shadow: 2px 2px #ddd;
@@ -78,7 +78,7 @@ body {
     outline: none;
     resize: none;
     box-shadow: yellow 0 0 10px 5px;
-    font: 2.25rem "Comic Sans MS";
+    font: 2.25rem "Comic Neue";
     text-align: center;
     line-height: 75px;
 }
@@ -90,7 +90,7 @@ body {
 #drink_banner {
     background-color: #F4EB34;
     margin-top: 65px;
-    font: bold 7rem "Comic Sans MS";
+    font: bold 7rem "Comic Neue";
     position: fixed;
     width: 100%;
     height: 100%;
