@@ -55,9 +55,9 @@ function readText() {
         resetTimer();
     }
     if (currentWord.length > 15) {
-        word_text.style.fontSize = "2.2rem";
+        word_text.style.fontSize = "2rem";
     } else {
-        word_text.style.fontSize = "3rem";
+        word_text.style.fontSize = "2.5rem";
     }
 }
 

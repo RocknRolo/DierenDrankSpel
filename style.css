@@ -48,19 +48,6 @@ body {
 
 #letter_header, #timer_header {
     font-size: 1rem;
-    font-weight: 700;
-}
-
-#drink_banner {
-    background-color: #F4EB34;
-    margin-top: 65px;
-    font: bold 7rem "Comic Sans MS";
-    font-weight: 700;
-    position: fixed; 
-    width: 100%; 
-    height: 100%;
-    z-index: 2;
-    display: none; 
 }
 
 #drink_text {
@@ -72,14 +59,14 @@ body {
 }
 
 #word_box {
-    width: 300px;
-    font-size: 3rem;
+    font-size: 2.5rem;
     background-color: #fff;
     text-align: center;
+    width: 360px;
+    height: 100px;
     margin: 10px;
-    padding: 30px;
-    height: 75px;
     box-shadow: yellow 0 0 10px 5px;
+    line-height: 100px;
 }
 
 #input_area {
@@ -91,13 +78,28 @@ body {
     outline: none;
     resize: none;
     box-shadow: yellow 0 0 10px 5px;
-
     font: 2.25rem "Comic Sans MS";
     text-align: center;
     line-height: 75px;
 }
 
 ::placeholder {
-  color: #eee;
-  opacity: 1;
+  color: #ddd;
+}
+
+#drink_banner {
+    background-color: #F4EB34;
+    margin-top: 65px;
+    font: bold 7rem "Comic Sans MS";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    #word_box, #input_area {
+        width: 72%;
+    }
 }
