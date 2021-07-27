@@ -27,7 +27,7 @@ body {
     font-family: "Comic Sans MS", sans-serif;
     color: #fff;
     font-size: 3rem;
-    font-weight: 700;
+    text-shadow: 2px 2px #ddd;
 }
 
 .box {
@@ -92,7 +92,7 @@ body {
     resize: none;
     box-shadow: yellow 0 0 10px 5px;
 
-    font: 2.25rem roboto;
+    font: 2.25rem "Comic Sans MS";
     text-align: center;
     line-height: 75px;
 }
